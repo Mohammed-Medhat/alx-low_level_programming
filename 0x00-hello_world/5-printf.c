@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  *main - Entry point
- *Description:C program that prints with put function
+ *Description:C program that prints with printf function
  *Return: Alawys 0 (Success)
 */
 int main(void)

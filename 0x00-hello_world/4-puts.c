@@ -1,8 +1,9 @@
 #include <stdio.h>
-
-/*
- *Description: C program prints a text with put function
- * */
+/**
+ *main - Entry point
+ *Description:C program that prints with put function
+ *Return: Alawys 0 (Success)
+*/
 
 int main(void)
 {
