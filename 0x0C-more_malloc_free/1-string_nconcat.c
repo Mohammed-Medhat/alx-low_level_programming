@@ -31,10 +31,17 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
     {
         i[f] = s1[f];
     }
-     for (int f = 0; f<sizeof(s2); f++)
-     {
+     if (n >= sizeof(s2))
+     for (int f =0 ; f<sizeof(s2); f++){
         i[f+sizeof(s1)] = s2[f];
         i[sizeof(s1)+sizeof(s2)] = '\0';
+    }
+    else 
+    {
+        for (int f=0 ; f<n; f++){
+        i[f+sizeof(s1)] = s2[f];
+        i[sizeof(s1)+sizeof(s2)] = '\0';
+    }
     }
     return(i);
 
