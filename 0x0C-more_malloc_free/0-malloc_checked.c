@@ -8,13 +8,6 @@
 *
 * Return: a pointer to the allocated memory
 */
-
-void *malloc_checked(unsigned int b);
-
-int main(void) {
-    
-}
-
 void *malloc_checked(unsigned int b){
     void *x;
 
